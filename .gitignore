@@ -53,3 +53,4 @@
 .idea
 .git
 .github
+.phpunit.result.cache
