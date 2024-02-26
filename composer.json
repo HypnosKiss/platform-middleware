@@ -1,60 +1,65 @@
 {
-    "name": "sweeper/platform-middleware",
-    "description": "Access Platform API Middleware",
-    "type": "library",
-    "keywords": [
-        "PHP",
-        "Platform",
-        "API",
-        "Middleware"
-    ],
-    "homepage": "https://github.com/HypnosKiss/platform-middleware/",
-    "license": "Apache-2.0",
-    "authors": [
-        {
-            "name": "sweeper",
-            "email": "wili.lixiang@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=7.2",
-        "ext-curl": "*",
-        "ext-json": "*",
-        "ext-libxml": "*",
-        "ext-mbstring": "*",
-        "ext-mysqli": "*",
-        "ext-openssl": "*",
-        "ext-pdo": "*",
-        "ext-redis": "*",
-        "ext-soap": "*",
-        "php-amqplib/php-amqplib": "^3.3.0",
-        "predis/predis": "^2.2.0 || ^v3",
-        "psr/log": "^1.1 || ^2.0 || ^3.0",
-        "sweeper/design-pattern": "^1.0 || ^2.0",
-        "sweeper/guzzlehttp-request": "^1.0 || ^2.0",
-        "sweeper/helper-php": "^1.0 || ^2.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Sweeper\\PlatformMiddleware\\": "src/"
-        },
-        "files": [
-            "src/helper.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Sweeper\\PlatformMiddleware\\Test\\": "test"
-        }
-    },
-    "config": {
-        "preferred-install": "dist",
-        "optimize-autoloader": true,
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "require-dev": {
-        "phpunit/phpunit": "^8",
-        "symfony/var-dumper": "^5.4.29"
+  "name": "sweeper/platform-middleware",
+  "description": "Access Platform API Middleware",
+  "type": "library",
+  "keywords": [
+    "PHP",
+    "Platform",
+    "API",
+    "Middleware"
+  ],
+  "homepage": "https://github.com/HypnosKiss/platform-middleware/",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "sweeper",
+      "email": "wili.lixiang@gmail.com"
     }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-libxml": "*",
+    "ext-mbstring": "*",
+    "ext-mysqli": "*",
+    "ext-openssl": "*",
+    "ext-pdo": "*",
+    "ext-redis": "*",
+    "ext-simplexml": "*",
+    "ext-soap": "*",
+    "ext-xml": "*",
+    "mirakl/sdk-php-shop": "*",
+    "php-amqplib/php-amqplib": "^3.3.0",
+    "phpclassic/php-shopify": "1.1.20",
+    "predis/predis": "^2.2.0 || ^v3",
+    "psr/log": "^1.1 || ^2.0 || ^3.0",
+    "sweeper/design-pattern": "^1.0 || ^2.0",
+    "sweeper/guzzlehttp-request": "^1.0 || ^2.0",
+    "sweeper/helper-php": "1.0.21"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8",
+    "symfony/var-dumper": "^5.4.29"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sweeper\\PlatformMiddleware\\": "src/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sweeper\\PlatformMiddleware\\Test\\": "test"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
