@@ -5,11 +5,11 @@
  * DateTime: 2024/2/26 13:49
  */
 
-namespace Sweeper\PlatformMiddleware\Test\platform\mirakl;
+namespace Sweeper\PlatformMiddleware\Test\Services\Mirakl;
 
 use PHPUnit\Framework\TestCase;
-use Sweeper\PlatformMiddleware\platform\mirakl\Order;
-use Sweeper\PlatformMiddleware\platform\mirakl\Request;
+use Sweeper\PlatformMiddleware\Services\Mirakl\Order;
+use Sweeper\PlatformMiddleware\Services\Mirakl\Request;
 
 class OrderTest extends TestCase
 {
@@ -25,7 +25,6 @@ class OrderTest extends TestCase
         dump($response);
 
         $this->assertTrue($response->isSuccess());
-
     }
 
     public function testGetOrderDocuments(): void

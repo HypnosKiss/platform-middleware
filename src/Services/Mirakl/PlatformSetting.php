@@ -1,6 +1,6 @@
 <?php
 
-namespace Sweeper\PlatformMiddleware\platform\mirakl;
+namespace Sweeper\PlatformMiddleware\Services\Mirakl;
 
 use Mirakl\MMP\Shop\Request\Shipping\GetShippingCarriersRequest;
 use Sweeper\GuzzleHttpRequest\Response;
@@ -10,7 +10,7 @@ use Sweeper\GuzzleHttpRequest\Response;
  * Created by Sweeper PhpStorm.
  * Author: Sweeper <wili.lixiang@gmail.com>
  * DateTime: 2024/2/26 13:16
- * @Package \Sweeper\PlatformMiddleware\platform\mirakl\PlatformSetting
+ * @Package \Sweeper\PlatformMiddleware\Services\Mirakl\PlatformSetting
  */
 class PlatformSetting extends Request
 {

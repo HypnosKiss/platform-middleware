@@ -1,9 +1,15 @@
 <?php
+
 /**
  * Created by Sweeper PhpStorm.
  * Author: Sweeper <wili.lixiang@gmail.com>
  * DateTime: 2024/2/26 10:50
  */
+
+namespace Sweeper\PlatformMiddleware;
+
+/** 定义包根目录路径 */
+define("SWEEPER_PLATFORM_MIDDLEWARE_PACKAGE_ROOT_PATH", dirname(__DIR__));
 
 if (!function_exists('camelize')) {
     /**
@@ -142,3 +148,38 @@ if (!function_exists('mb_detect_convert_encoding')) {
         return mb_convert_encoding($str, $toEncoding, $fromEncoding ?: mb_detect_encoding($str));
     }
 }
+
+if (!function_exists('vendor_path')) {
+    /**
+     * vendor 目录路径
+     * Author: Sweeper <wili.lixiang@gmail.com>
+     * DateTime: 2024/2/27 13:32
+     * @return string
+     */
+    function vendor_path(): string
+    {
+        $vendorPath = dirname(__DIR__, 4) . '/vendor';
+
+        return is_dir($vendorPath) ? $vendorPath : SWEEPER_PLATFORM_MIDDLEWARE_PACKAGE_ROOT_PATH . '/vendor';
+    }
+}
+
+if (!function_exists('package_path')) {
+    /**
+     * package 目录路径
+     * Author: Sweeper <wili.lixiang@gmail.com>
+     * DateTime: 2024/2/27 13:32
+     * @param string $packageName
+     * @return string
+     */
+    function package_path(string $packageName = 'sweeper/platform-middleware'): string
+    {
+        $packagePath = vendor_path() . '/' . trim($packageName, '/\\');
+        if (empty($packageName)) {
+            return SWEEPER_PLATFORM_MIDDLEWARE_PACKAGE_ROOT_PATH;
+        }
+
+        return is_dir($packagePath) ? $packagePath : SWEEPER_PLATFORM_MIDDLEWARE_PACKAGE_ROOT_PATH;
+    }
+}
+

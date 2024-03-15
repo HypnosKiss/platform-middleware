@@ -1,6 +1,6 @@
 <?php
 
-namespace Sweeper\PlatformMiddleware\platform\mirakl;
+namespace Sweeper\PlatformMiddleware\Services\Mirakl;
 
 use Mirakl\Core\Client\AbstractApiClient;
 use Mirakl\Core\Request\AbstractRequest;
@@ -15,7 +15,7 @@ use Sweeper\HelperPhp\Tool\ClientRequest;
  * Created by Sweeper PhpStorm.
  * Author: Sweeper <wili.lixiang@gmail.com>
  * DateTime: 2024/2/26 13:01
- * @Package \Sweeper\PlatformMiddleware\platform\mirakl\Request
+ * @Package \Sweeper\PlatformMiddleware\Services\Mirakl\Request
  */
 class Request extends ClientRequest
 {

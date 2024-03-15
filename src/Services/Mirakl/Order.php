@@ -1,6 +1,6 @@
 <?php
 
-namespace Sweeper\PlatformMiddleware\platform\mirakl;
+namespace Sweeper\PlatformMiddleware\Services\Mirakl;
 
 use Mirakl\MMP\Shop\Request\Order\Document\DownloadOrdersDocumentsRequest;
 use Mirakl\MMP\Shop\Request\Order\Document\GetOrderDocumentsRequest;
@@ -13,7 +13,7 @@ use Sweeper\GuzzleHttpRequest\Response;
  * Created by Sweeper PhpStorm.
  * Author: Sweeper <wili.lixiang@gmail.com>
  * DateTime: 2024/2/26 13:18
- * @Package \Sweeper\PlatformMiddleware\platform\mirakl\Order
+ * @Package \Sweeper\PlatformMiddleware\Services\Mirakl\Order
  */
 class Order extends Request
 {

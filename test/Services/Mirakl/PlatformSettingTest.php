@@ -5,11 +5,11 @@
  * DateTime: 2024/2/26 13:50
  */
 
-namespace Sweeper\PlatformMiddleware\Test\platform\mirakl;
+namespace Sweeper\PlatformMiddleware\Test\Services\Mirakl;
 
 use PHPUnit\Framework\TestCase;
-use Sweeper\PlatformMiddleware\platform\mirakl\PlatformSetting;
-use Sweeper\PlatformMiddleware\platform\mirakl\Request;
+use Sweeper\PlatformMiddleware\Services\Mirakl\PlatformSetting;
+use Sweeper\PlatformMiddleware\Services\Mirakl\Request;
 
 class PlatformSettingTest extends TestCase
 {
