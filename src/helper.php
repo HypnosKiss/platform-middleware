@@ -183,3 +183,16 @@ if (!function_exists('package_path')) {
     }
 }
 
+if (!function_exists('root_path')) {
+    /**
+     * 根目录路径
+     * Author: Sweeper <wili.lixiang@gmail.com>
+     * DateTime: 2024/2/27 13:32
+     * @return string
+     */
+    function root_path(): string
+    {
+        return dirname(vendor_path());
+    }
+}
+
